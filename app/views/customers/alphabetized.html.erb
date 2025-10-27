@@ -1,0 +1,13 @@
+<h1>Alphabetized Customers</h1>
+
+<div class="container">
+  <div class="level">
+    <div class="level-left">
+      <%= link_to "All Customers", root_path, class: "button is-link" %>
+    </div>
+    <div class="level-right">
+      <%= link_to "Customers with Missing Email", customers_missing_email_path, class: "button is-link" %>
+    </div>
+  </div>
+  <%= render @customers %>
+</div>
